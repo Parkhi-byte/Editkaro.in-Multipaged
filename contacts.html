@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Editkaro.in</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitContactForm(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            alert(`Thank you for contacting us, ${name}! We will get back to you soon.\n\nYour Message:\n${message}\n\nEmail: ${email}\nPhone: ${phone}`);
+            document.getElementById('contactForm').reset(); // Reset the form
+        }
+    </script>
+</head>
+
+<body>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #e1acf1;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .nav-menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .email-form input,
+        .email-form button {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about h1 {
+            font-size: 30px;
+        }
+
+        /* Typography Section */
+        .typography {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .typography h1,
+        h2,
+        h3,
+        h4 {
+            margin: 10px 0;
+        }
+
+        /* Contacts Section */
+        .contacts {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e5b7ee;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Editkaro.in</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="checklist.html">Checklist</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>If you are living nearby, come visit us at one of our comfortable offices.</p>
+            <h2>Office 1</h2>
+            <p>9863 - 9867 Mill Road, Cambridge, MG09 99HT</p>
+            <p>Phone: +1 800 603 6035</p>
+            <p>Email: mail@demolink.org</p>
+            <h2>Office 2</h2>
+            <p>9870 St Vincent Place, Glasgow, DC 45 Fr 45</p>
+            <p>Phone: +1 800 603 6035</p>
+            <p>Email: mail@demolink.org</p>
+
+            <h2>Get in Touch</h2>
+            <form id="contactForm" onsubmit="submitContactForm(event)">
+                <input type="text" id="name" placeholder="Your Name" required><br><br>
+                <input type="email" id="email" placeholder="Your Email" required><br><br>
+                <input type="tel" id="phone" placeholder="Your Phone" required><br><br>
+                <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+                <button type="submit">Send Message</button><br><br>
+            </form>
+        </section>
+    </main>
+
+    <footer>

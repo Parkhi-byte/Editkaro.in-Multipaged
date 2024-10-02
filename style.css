@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.email-form input,
+.email-form button {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 30px;
+}
+
+/* Typography Section */
+.typography {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.typography h1,
+h2,
+h3,
+h4 {
+    margin: 10px 0;
+}
+
+/* Contacts Section */
+.contacts {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}

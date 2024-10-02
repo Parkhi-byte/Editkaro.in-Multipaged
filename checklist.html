@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function displayChecklist() {
+            const email = localStorage.getItem('userEmail'); // Retrieve email from localStorage
+            document.getElementById('emailDisplay').textContent = email ? email : 'Not provided'; // Display email
+
+            // Your checklist items
+            const checklistItems = [
+                'Define your target audience',
+                'Set clear marketing goals',
+                'Choose your marketing channels',
+                'Create engaging content',
+                'Analyze and adjust your strategy'
+            ];
+
+            const checklistContainer = document.getElementById('checklistContainer');
+            checklistItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item; // Add checklist item
+                checklistContainer.appendChild(li); // Append item to the checklist
+            });
+        }
+    </script>
+</head>
+
+<body onload="displayChecklist()">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Editkaro.in</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="checklist.html">Checklist</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <style>
+        /* General Styles */
+        /* General Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #f8b73f;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .navbar .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .nav-menu li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .email-form input,
+        .email-form button {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about h1 {
+            font-size: 30px;
+        }
+
+        /* Typography Section */
+        .typography {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .typography h1,
+        h2,
+        h3,
+        h4 {
+            margin: 10px 0;
+        }
+
+        /* Contacts Section */
+        .contacts {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f3b632;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+
+    <main>
+        <section>
+            <h1>Your Checklist</h1>
+            <p>Email: <span id="emailDisplay"></span></p> <!-- Display the email -->
+            <ul id="checklistContainer"></ul> <!-- Container for checklist items -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in. Developed by Parkhi.</p>
+    </footer>
+</body>
+
+</html>

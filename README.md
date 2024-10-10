@@ -1,4 +1,4 @@
-# Editkaro.in-A Responsive Portfolio Website
+# Editkaro.in-A Responsive Multipaged Website
 
 This project is a responsive marketing website called Editkaro.in, designed to demonstrate web development skills including HTML, CSS, and JavaScript. The website includes various sections like Home, About Us, Checklist, and Contact Us. It showcases the ability to collect user email information, generate checklists dynamically, and manage contact inquiries.
 
